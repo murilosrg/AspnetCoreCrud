@@ -5,10 +5,10 @@ namespace AspnetCoreCrud.Models.ViewModel.Produtos
     public class CadastrarProdutoViewModel
     {
 
-        [Required, StringLength(150, ErrorMessage = "Campo 'Nome' deve conter no máximo {0} caracteres.")]
+        [Required(ErrorMessage= "Campo 'Nome' é obrigatorio"), StringLength(150, ErrorMessage = "Campo 'Nome' deve conter no máximo {0} caracteres.")]
         public string Nome { get; set; }
 
-        [Required, RegularExpression(@"\d+(\.\d{1,2})?", ErrorMessage = "Campo 'Nome' é invalido.")]
-        public string Valor { get; set; }
+        [Required(ErrorMessage= "Campo 'Valor' é obrigatorio"), RegularExpression(@"\d+(\.\d{1,2})?", ErrorMessage = "Campo 'Valor' é invalido.")]
+        public decimal Valor { get; set; }
     }
 }
