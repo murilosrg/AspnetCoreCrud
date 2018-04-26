@@ -27,7 +27,7 @@ namespace AspnetCoreCrud
 
             services.AddDbContext<DbApplication>(options =>
             {
-                options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]);
+                options.UseSqlServer(Configuration["ConnectionStrings:Default"]);
             });
 
             services.AddTransient<DbApplication>();
