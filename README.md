@@ -1,2 +1,2 @@
 # AspnetCoreCrud
-Aplicação dimples em aspnet core com EF
+Aplicação simples em aspnet core com EF
